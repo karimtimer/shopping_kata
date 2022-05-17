@@ -1,4 +1,4 @@
-require_relative "discount.rb"
+require_relative "discounts/basic_discount.rb"
 
 class CheckOut
 

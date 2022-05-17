@@ -5,7 +5,7 @@ class TestPrice < Test::Unit::TestCase
 
   def subject
     rules = {a: 50, b: 30, c:20, d: 15}
-    discounts = [ Discount.new('A', 3, 20), Discount.new('B', 2, 15) ]
+    discounts = [ Discounts::BasicDiscount.new('A', 3, 20), Discounts::BasicDiscount.new('B', 2, 15) ]
     CheckOut.new(rules, discounts)
   end
 
